@@ -13,6 +13,10 @@ module.exports = {
         {
           test: /\.css$/,
           loader: 'style-loader!css-loader?modules'
+        },
+        {
+          test: /\.(png|jpg|)$/,
+          loader: 'url-loader?limit=200000'
         }
       ]
     }
